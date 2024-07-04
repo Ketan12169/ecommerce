@@ -42,7 +42,10 @@ export default function Categories({ categories }) {
         <h1 className="">Categories</h1>
         <Div>
           {categories.map((category) => (
-            <CategoryBox onClick={() => openCategoryProducts(category._id)}>
+            <CategoryBox
+              key={category._id}
+              onClick={() => openCategoryProducts(category._id)}
+            >
               <Img
                 src={category.categoryImages[0]}
                 alt="Image"
