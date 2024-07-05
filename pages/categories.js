@@ -47,6 +47,7 @@ export default function Categories({ categories }) {
               onClick={() => openCategoryProducts(category._id)}
             >
               <Img
+                key={category._id}
                 src={category.categoryImages[0]}
                 alt="Image"
                 width="250"

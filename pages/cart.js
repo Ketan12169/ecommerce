@@ -102,17 +102,17 @@ export default function CartPage() {
     removeProduct(id);
   }
   async function goToPayment() {
-    // if (
-    //   !name ||
-    //   !email ||
-    //   !city ||
-    //   !streetAddress ||
-    //   !country ||
-    //   !cartProducts
-    // ) {
-    //   alert("Please fill all information");
-    //   return;
-    // }
+    if (
+      !name ||
+      !email ||
+      !city ||
+      !streetAddress ||
+      !country ||
+      !cartProducts
+    ) {
+      alert("Please fill all information");
+      return;
+    }
     const response = await axios.post("/api/checkout", {
       name,
       email,
