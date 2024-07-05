@@ -4,6 +4,7 @@ import Title from "@/components/Title";
 import WhiteBox from "@/components/WhiteBox";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Category } from "@/models/Category";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import styled from "styled-components";
 
@@ -46,13 +47,13 @@ export default function Categories({ categories }) {
               key={category._id}
               onClick={() => openCategoryProducts(category._id)}
             >
-              <Img
+              <Image
                 key={category._id}
                 src={category.categoryImages[0]}
                 alt="Image"
                 width="250"
                 height="200"
-              ></Img>
+              ></Image>
               <h2 key={category._id}>{category.name}</h2>
             </CategoryBox>
           ))}
