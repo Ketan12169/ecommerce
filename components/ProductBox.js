@@ -6,7 +6,9 @@ import { useContext } from "react";
 import { CartContext } from "@/components/CartContext";
 import Image from "next/image";
 
-const ProductWrapper = styled.div``;
+const ProductWrapper = styled.div`
+  max-width: 180px;
+`;
 
 const Title = styled(Link)`
   font-weight: normal;

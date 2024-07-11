@@ -8,6 +8,7 @@ import { useSession } from "next-auth/react";
 
 const StyledHeader = styled.header`
   background-color: #222;
+  width: 100%;
 `;
 const Logo = styled(Link)`
   color: #fff;
@@ -19,6 +20,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+  width: 100%;
 `;
 const StyledNav = styled.nav`
   ${(props) =>

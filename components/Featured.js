@@ -92,8 +92,9 @@ export default function Featured({ product }) {
       {showNote && (
         <Note>
           {" "}
-          Note :- This ecommerce website is just for demo purpose. Order placed
-          will not be delivered <Span onClick={handleClose}>X</Span>
+          Please note that while you can place orders, they will not be
+          delivered as this is a demonstration website, not a real e-commerce
+          platform. <Span onClick={handleClose}>X</Span>
         </Note>
       )}
 
