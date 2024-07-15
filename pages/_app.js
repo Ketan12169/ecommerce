@@ -3,7 +3,8 @@ import { CartContextProvider } from "@/components/CartContext";
 import { SessionProvider } from "next-auth/react";
 
 const GlobalStyles = createGlobalStyle`
- 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+  
   body{
     background-color: #eee;
     padding:0;
