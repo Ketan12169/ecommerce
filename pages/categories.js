@@ -17,7 +17,7 @@ const CategoryBox = styled.div`
   padding: 20px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light gray box shadow */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 `;
 const Div = styled.div`
   display: flex;
