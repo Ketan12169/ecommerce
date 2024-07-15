@@ -14,6 +14,10 @@ const CategoryBox = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light gray box shadow */
 `;
 const Div = styled.div`
   display: flex;
@@ -51,8 +55,8 @@ export default function Categories({ categories }) {
                 key={category._id}
                 src={category.categoryImages[0]}
                 alt="Image"
-                width="250"
-                height="200"
+                width="200"
+                height="160"
               ></Image>
               <h2 key={category._id}>{category.name}</h2>
             </CategoryBox>
